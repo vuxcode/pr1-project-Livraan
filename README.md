@@ -5,7 +5,7 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 
 > You can use this section of the file to keep notes about your project as you work on it.
 > 
-I have now set up everything, all i need to do is to start code the program. I feel like this program is gonna be to hard for me to do, because there is different types of language you need to use. Language I haven't used.
+I have now set up everything, all i need to do is to start code the program. I feel like this program is gonna be too hard for me to do, because there is different types of language you need to use. Language I haven't used.
 
 REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
