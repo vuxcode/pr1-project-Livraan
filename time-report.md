@@ -13,3 +13,6 @@
 
 - 2021-10-31 15:05, Worked for 2 hours and 5 minutes
   - I have created a link for the button so the user can start the quiz. Right now the link just transfer the user to an empty page. Next thing is to start working on the questions. The text is still a little weird when the window is resized and I haven't found a way to fix it. Yet.
+
+- 2021-10-31 19:30, Worked for 40 minutes
+  - Got some help from my boyfriend to figure out why the text is jumping down. Research and founded a fix for it and now it works.

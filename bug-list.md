@@ -4,7 +4,7 @@
 
 1. Problem: The title text jumps down one word line so the title has one word per line when the window screen is resized. The button glides to the side of the title and makes it look bad. 
 
-Fix:
+Fix: Found out that the text was collapsing and to prevent that I needed to write "white-space: nowrap;" , Now the text is working as expected.
 
 2. Problem: The button text color changed when the hyperlink was coded. After that the text color couldn't be changed back or change at all.
 
