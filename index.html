@@ -3,24 +3,26 @@
     <head>
       <!--This is for the button-->
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style>
+      <style type = "text/css">
         /* This changes the background color of the page*/
-          body {background-color: black;}
+          body {background-color: rgb(0, 0, 0);
+          }
           /* This changes the color of the text, font and size*/
           h1 {color: #ea00ff;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 500%;
+            /* This makes the text shine, like a street sign */
+            text-shadow: 1px 1px 2px rgb(255, 0, 200), 0 0 25px rgb(255, 0, 200), 0 0 5px rgb(255, 0, 221);
             /* This postions the text in the center a little bit higher than middle of the page*/
            text-align: center;
            padding: 240px 650px;
            position: sticky;
-        }         
-         /* This creates a button with rounded corners with a background color, */
+        } 
+        /* This creates a button with rounded corners with a background color, */
         /* adds a text, change font, color and where the text is positioned in the box */
         .button {
-          background-color: rgb(0, 31, 116);
+          background-color: rgb(0, 247, 255);
           border: none;
-          color: rgb(244, 162, 255);
           padding: 20px 40px;
           text-align: center;
           text-decoration: none;
@@ -33,13 +35,28 @@
           left: 860px;
           cursor: pointer;
         }
-        .button {border-radius: 20%;}          
+        /* This changes the color of the text and the color when the button is pressed */
+        a {
+          color: rgb(255, 0, 157);
+        }
+        a:active {
+  color: rgb(38, 0, 255);
+        }
+        /* This makes the button cast a glooming shadow when the cursor is hovering over the button */
+        .button:hover {
+          box-shadow: 0 255px 212px 0 rgb(255, 0, 212), 0 6px 20px 0 rgb(212, 0, 255);
+        } 
+        /* This changes the size of the box */
+        .button {border-radius: 20%;}  
       </style>
       </head>
       <body>   
           <!---This is the title-->
           <h1>The Gaming Quiz</h1>
           <!--This is the text for the button-->
-<button class="button button">Start</button>
-      </body>
+          <!--This is also the link for the button so the user starts the quiz-->
+<button class="button button">
+<a type="button" href="The gaming quiz.html" style="text-decoration: none;">Start</a>
+</button>
+</body>
 </html>
