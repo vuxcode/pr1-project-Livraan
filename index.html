@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <!--This is for the button-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <style>
         /* This changes the background color of the page*/
           body {background-color: black;}
@@ -11,11 +13,32 @@
             /* This postions the text in the center a little bit higher than middle of the page*/
            text-align: center;
            padding: 170px;
-        }                  
+        }         
+         /* This creates a button with rounded corners with a background color, */
+        /* adds a text, change font, color and where the text is positioned in the box */
+        .button {
+          background-color: rgb(0, 31, 116);
+          border: none;
+          color: rgb(244, 162, 255);
+          padding: 20px 40px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-size: 30px;
+          /* This postions the box under the title and in the middle of the screen */
+          position: fixed;
+          left: 690px;
+          top: 400px;
+          cursor: pointer;
+        }
+        .button {border-radius: 20%;}          
       </style>
       </head>
       <body>   
           <!---This is the title-->
           <h1>The Gaming Quiz</h1>
+          <!--This is the text for the button-->
+<button class="button button">Start</button>
       </body>
 </html>
