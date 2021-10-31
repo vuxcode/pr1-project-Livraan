@@ -10,3 +10,6 @@
 
 - 2021-10-31 00:36, Worked for 1 hour and 15 minutes
   - I have created a start button that is inside a box. Changed color on both text and background and changed the font aswell. I changed the position so the button is aligned with the title. Tried researching on how to make the button start the quiz. 
+
+- 2021-10-31, Worked for 2 hours and 5 minutes
+  - I have created a link for the button so the user can start the quiz. Right now the link just transfer the user to an empty page. Next thing is to start working on the questions. The text is still a little weird when the window is resized and I haven't found a way to fix it. Yet.
