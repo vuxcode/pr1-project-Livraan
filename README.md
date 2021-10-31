@@ -9,7 +9,9 @@ I have now set up everything, all i need to do is to start code the program. I f
 
 Now when I have finally understand that we have learned the code i'm gonna use (face palm), thanks to Colin. I'm gonna learn CSS though but with the help of different websites I think it will be ok. I have done the beginning of my code now and it works really good. Some videos I have noticed been outdated because it didn't work when I was experimenting with my code. But now I have found a code that works.
 
-I have a hard time figuring out how to make the start button work. I haven't started coding the questions and maybe that is the problem. I'm gonna research some more and experiment, if I can't make it work I'm gonna ask Colin for help.  
+I have a hard time figuring out how to make the start button work. I haven't started coding the questions and maybe that is the problem. I'm gonna research some more and experiment, if I can't make it work I'm gonna ask Colin for help. 
+
+I have finally found a way to make the start button work as expected. I'm now moving forward to the actual quiz. 
 
 REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
