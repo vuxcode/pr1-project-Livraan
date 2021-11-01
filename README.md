@@ -15,6 +15,7 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 
 
 > Links:
+
 > https://www.w3schools.com/default.asp
 
 > https://htmlcolorcodes.com/color-picker/
