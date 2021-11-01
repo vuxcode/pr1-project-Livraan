@@ -13,6 +13,29 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 
 > I have finally found a way to make the start button work as expected. I'm now moving forward to the actual quiz. 
 
+
+> Links:
+> https://www.w3schools.com/default.asp
+
+> https://htmlcolorcodes.com/color-picker/
+
+> https://careerkarma.com/blog/html-text-color/
+
+> https://www.tutorialbrain.com/css_tutorial/css_font_family_list/
+
+> https://careerkarma.com/blog/html-comments/
+
+> https://www.rapidtables.com/web/color/RGB_Color.html
+
+> https://www.javatpoint.com/how-to-change-link-color-in-css
+
+> https://www.tutorialspoint.com/How-to-remove-underline-from-a-link-in-HTML
+
+> https://stackoverflow.com/questions/41176710/how-do-i-lock-my-text-element-html
+
+> https://stackoverflow.com/questions/52692475/how-to-navigate-to-the-next-page-website-on-button-click
+
+
 REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
 # Project Summary
