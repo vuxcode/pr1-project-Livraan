@@ -1,3 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* This is all the CSS for the quiz */
+    body {
+
+    }
+    .grid {
+     
+    }
+    .buttons {
+      
+    }
+    #btn0, #btn1, #btn2, #btn3 {
+      
+      
+    }
+    #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+      box-shadow: 0 6px 20px 0 rgb(212, 0, 255);
+    }
+    #btn0, #btn1, #btn2, #btn3 {border-radius: 30%;}  
+    
+    .btn-grid {
+      
+    }
+    #score {
+
+    }
+    .grid #question {
+      
+    }
+    #btn0, #btn1, #btn2, #btn3 {
+
+    }
+    #progress {
+
+    }
+
+</style>
+</head>
+<body>
+<!--This is a template for the questions and the answer buttons-->
+<div class="grid">
+  <div id="quiz">
+  <p id="question"></p>
+
+  <div class="buttons">
+    <button id="btn0"><span id="choice0"></span></button>
+    <button id="btn1"><span id="choice1"></span></button>
+    <button id="btn2"><span id="choice2"></span></button>
+    <button id="btn3"><span id="choice3"></span></button>
+  </div>
+<!--This is the template for the progress-->
+  <footer>
+    <p id="progress">Question x of y</p>
+  </footer>
+
+</div>
+</div>
 <script>
+// This is a function that tells what object each step belongs to
+function Quiz(questions) {
+  this.score = 0;
+  this.questions = questions;
+  this.questionIndex = 0;
+}
+// This adds properties and methods to the question and a return to stop the function
+Quiz.prototype.getQuestionIndex = function() {
+  return this.questions[this.questionIndex];
+}
+// This adds properties and methods to the answers and uses if statement to give a point if the user answers right
+Quiz.prototype.answer = function(answer) {
+  if(this.getQuestionIndex().isCorrectAnswer(answer)) {
+    this.score++;
+  }
+  this.questionIndex++;
+}
+// This tells that the quiz has ended and use return to stop the quiz to continue
+Quiz.prototype.isEnded = function() {
+  return this.questionIndex === this.questions.length;
+}
+// A function that tells what parts of the questions object belongs to
+function Question(text, choices, answer) {
+  this.text = text;
+  this.choices = choices;
+  this.answer = answer;
+}
+// This is about if the answer is correct
+Question.prototype.isCorrectAnswer = function(choice) {
+  return this.answer === choice;
+}
+// This creates a function that displays the questions and the for-loop goes through the answers to check if the user clicked the correct answer
+// It also shows the progress and if the quiz has ended it's gonna display the 'end' function
+function populate() {
+  if(quiz.isEnded()) {
+    showScores();
+  }
+  else {
+    var element = document.getElementById("question");
+    element.innerHTML = quiz.getQuestionIndex().text;
+
+    var choices = quiz.getQuestionIndex().choices;
+    for(var i = 0; i < choices.length; i++) {
+      var element = document.getElementById("choice" + i);
+      element.innerHTML = choices[i];
+      answer("btn" + i, choices[i]);
+    }
+    showProgress();
+  }
+};
+// This creates the function to the buttons
+function answer(id, answer) {
+  var button = document.getElementById(id);
+  button.onclick = function() {
+    quiz.answer(answer);
+    populate();
+    
+  }
+};
+// This shows the progress of the quiz
+function showProgress() {
+  var currentQuestionNumber = quiz.questionIndex + 1;
+  var element = document.getElementById("progress");
+  element.innerHTML = " Question " + currentQuestionNumber + " of " + quiz.questions.length;
+};
+// This shows in the end of the quiz what scores the user got
+function showScores() {
+  var gameOverHTML = "<h1>Result</h1>";
+  gameOverHTML += "<h2 id='score'> You got: " + quiz.score + " out of " + quiz.questions.length +"</h2>";
+  var element = document.getElementById("quiz");
+  element.innerHTML = gameOverHTML;
+};
+// This is the stored questions in variables and answers in arrays. Then one of the answers that is correct is stored
+var questions = [
+new Question("Who are the founders of Blizzard Entertainment?", ["Michael Morhaime, Allen Adham and Frank Pearce", "Markus Persson, Robert A. Altman and Christopher Weaver", "Trip Hawkins, Markus Persson and Jens Bergensten", "Elon Musk, Steve Jobs and some guy"], "Michael Morhaime, Allen Adham and Frank Pearce"),
+new Question("How long was Red Dead Redemption 2's story script?", ["2.4 meter high, around 40 - 50 hours of gameplay", "100 meter high, around 300 hours of gameplay", "3 meter high, around 20 hours of gameplay", "Maybe around 10 cm high, around 10 hours of gameplay"], "2.4 meter high, around 40 - 50 hours of gameplay")
+];
+// This creates the quiz
+var quiz = new Quiz(questions);
+// This displays the quiz
+populate();
 
 </script>
+
+</body>
+</html>
