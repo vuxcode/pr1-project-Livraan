@@ -1,64 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <!--This is for the button-->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style type = "text/css">
+     
+     <style>
         /* This changes the background color of the page*/
           body {background-color: rgb(0, 0, 0);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           padding: 0;
+           margin: 0;
           }
           /* This changes the color of the text, font and size*/
-          h1 {color: #ea00ff;
+          .container {color: #ea00ff;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 500%;
             /* This makes the text shine, like a street sign */
             text-shadow: 1px 1px 2px rgb(255, 0, 200), 0 0 25px rgb(255, 0, 200), 0 0 5px rgb(255, 0, 221);
             /* This postions the text in the center a little bit higher than middle of the page*/
            text-align: center;
-           padding: 240px 650px;
+           padding: 0;
+           width: 800px;
+           max-width: 80%;
+           min-width: 800px;
            position: sticky;
            /* This makes the text not collapsing when the window is resized */
-           white-space: nowrap; 
+           white-space: nowrap;
         } 
         /* This creates a button with rounded corners with a background color, */
         /* adds a text, change font, color and where the text is positioned in the box */
-        .button {
+        .start-button {
           background-color: rgb(0, 247, 255);
           border: none;
-          padding: 20px 40px;
+          padding: 30px 50px;
           text-align: center;
           text-decoration: none;
           display: inline-block;
           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
           font-size: 30px;
           /* This postions the box under the title and in the middle of the screen */
-          position: relative;
-          top: -280px;
-          left: 860px;
+          position:static;
           cursor: pointer;
+          /* This changes the size of the box */
+          border-radius: 30%;
         }
         /* This changes the color of the text and the color when the button is pressed */
         a {
           color: rgb(255, 0, 157);
         }
         a:active {
-  color: rgb(38, 0, 255);
+          color: rgb(38, 0, 255);
         }
         /* This makes the button cast a glooming shadow when the cursor is hovering over the button */
         .button:hover {
           box-shadow: 0 255px 212px 0 rgb(255, 0, 212), 0 6px 20px 0 rgb(212, 0, 255);
         } 
-        /* This changes the size of the box */
-        .button {border-radius: 20%;}  
+        .button-grid {
+          display: center;
+          gap: 10px;
+          grid-template-columns: repeat(2, auto);
+          margin: 80px 100px;
+        }
       </style>
       </head>
-      <body>   
-          <!---This is the title-->
-          <h1>The Gaming Quiz</h1>
-          <!--This is the text for the button-->
-          <!--This is also the link for the button so the user starts the quiz-->
-<button class="button button">
-<a type="button" href="The_gaming_quiz.html" style="text-decoration: none;">Start</a>
-</button>
+      <body>
+        <div class="container">
+          <div id="Title-container" class="hide"></div>
+          <div id="Title">The Gaming Quiz</div>
+          <div id="start-button" class="button-grid">
+            <button class="start-button button">
+              <a type="start-button" href="The_gaming_quiz.html" style="text-decoration: none;">Start</a>
+              </button>
+          </div>
+        </div>   
+
 </body>
 </html>
