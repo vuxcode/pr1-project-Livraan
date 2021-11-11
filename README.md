@@ -11,8 +11,9 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 
 > I have a hard time figuring out how to make the start button work. I haven't started coding the questions and maybe that is the problem. I'm gonna research some more and experiment, if I can't make it work I'm gonna ask Colin for help. 
 
-> I have finally found a way to make the start button work as expected. I'm now moving forward to the actual quiz. 
+> I have finally found a way to make the start button work as expected. I'm now moving forward to the actual quiz.
 
+> After many days, hours and nights I have finally progressed with the actual quiz. I have followed a tutorial that did exactly what I was looking for. Some things i'm gonna change because I don't want it to look exactly like that and it would be copying. Now I can begin to store all the questions and look at maybe adding some functions. Maybe a restart button?  
 
 > Links:
 > 
@@ -26,7 +27,8 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 > https://www.tutorialspoint.com/How-to-remove-underline-from-a-link-in-HTML
 > https://stackoverflow.com/questions/41176710/how-do-i-lock-my-text-element-html
 > https://stackoverflow.com/questions/52692475/how-to-navigate-to-the-next-page-website-on-button-click
-
+> https://www.youtube.com/watch?v=riDzcEQbX6k&t=202s
+> https://webdevtrick.com/create-javascript-quiz-program/
 
 REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
