@@ -19,3 +19,6 @@
 
 - 2021-11-08 16:00, Worked for 2 hours and 30 minutes
   - Finally I figured it out and could finally progress. Found a tutorial that I could follow and used the information from the lesson today. I learned some new things aswell and now I can begin to add the rest of the questions, because I have now just done 2 questions. 
+
+- 2021-11-13 21:20, Worked for around 2 hours
+ - I did some CSS to make the quiz look nicer. Gonna add the other questions soon. Want to make an restart button first.
