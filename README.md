@@ -13,7 +13,9 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 
 > I have finally found a way to make the start button work as expected. I'm now moving forward to the actual quiz.
 
-> After many days, hours and nights I have finally progressed with the actual quiz. I have followed a tutorial that did exactly what I was looking for. Some things i'm gonna change because I don't want it to look exactly like that and it would be copying. Now I can begin to store all the questions and look at maybe adding some functions. Maybe a restart button?  
+> After many days, hours and nights I have finally progressed with the actual quiz. I have followed a tutorial that did exactly what I was looking for. Some things i'm gonna change because I don't want it to look exactly like that and it would be copying. Now I can begin to store all the questions and look at maybe adding some functions. Maybe a restart button?
+
+> Made some more CSS to the actual quiz. Began to look at a restart button but can't figure out how to make it work. Will write in the questions when i have created the restart button. 
 
 > Links:
 > 
