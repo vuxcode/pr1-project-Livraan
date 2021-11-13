@@ -13,3 +13,7 @@ Fix: Used the "a" CSS property to change the color of the text(a{ }) and change 
 3. Problem: The button don't work as expected, when you click on the button nothing happens. The button is supposed to start the quiz via another page (another file of code).
 
 Fix: Used the "<a>" tag to get the link to work with the button. Removed the line underneath the link aswell, using the "style="text-decoration: none;"".
+
+4. Problem: The restart button don't work and can't make the button show only at the end where the score is shown.
+
+Fix:
