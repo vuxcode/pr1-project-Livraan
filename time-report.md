@@ -22,3 +22,6 @@
 
 - 2021-11-13 21:20, Worked for around 2 hours
  - I did some CSS to make the quiz look nicer. Gonna add the other questions soon. Want to make an restart button first.
+
+ - 2021-11-15, Worked for 1 hour
+ - At the lesson i worked with the restart button and got some help making it work as expected. Then after that I did some CSS to make it look better.
