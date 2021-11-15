@@ -56,6 +56,26 @@
      font-size: 300%;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+    .hidden {
+      display: none;
+    }
+    #Restart-btn {
+      background-color: rgb(0, 225, 255);
+      font-size: 200%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 20px 30px;
+      border-radius: 30%;
+      border: none;
+      width: 160px;
+      position: static;
+      margin: auto;
+    }
+    #Restart-btn:hover {
+      box-shadow: 0 6px 20px 0 rgb(212, 0, 255);
+    }
     .grid #question {
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
      font-size: 300%;
@@ -86,9 +106,9 @@
   <footer>
     <p id="progress">Question x of y</p>
   </footer>
-<button id="Restart-btn">Restart</button>
 </div>
 </div>
+<button id="Restart-btn" class="hidden" onclick="restartGame()">Restart</button>
 <script>
 // This is a function that tells what object each step belongs to
 function Quiz(questions) {
@@ -96,6 +116,9 @@ function Quiz(questions) {
   this.questions = questions;
   this.questionIndex = 0;
 }
+// The variable for the restart button
+var restartBtn = document.getElementById("Restart-btn")
+
 // This adds properties and methods to the question and a return to stop the function
 Quiz.prototype.getQuestionIndex = function() {
   return this.questions[this.questionIndex];
@@ -161,11 +184,14 @@ function showScores() {
   gameOverHTML += "<h2 id='score'> Result: <br>" + quiz.score + " out of " + quiz.questions.length +"</h2>";
   var element = document.getElementById("quiz");
   element.innerHTML = gameOverHTML;
+  element.appendChild(restartBtn)
+  restartBtn.classList.remove("hidden");
 };
 
+// This is the function for the restart button so the game restarts
 function restartGame() {
-  window.location="";
-  document.getElementById("Restart-btn");
+ document.location.reload();
+ restartBtn.classList.add("hidden");
 };
 // This is the stored questions in variables and answers in arrays. Then one of the answers that is correct is stored
 var questions = [
