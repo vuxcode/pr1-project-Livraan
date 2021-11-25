@@ -19,6 +19,8 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 
 > Got help at the lesson today to make a restart button. Made it work and added some CSS to make it look good. Want to try make a progress bar instead of a progress that just says "Question x out of y". But first i'm gonna write in the rest of my questions and then make some final touches to the quiz.
 
+> Now I have written in all the questions with the answers and the right answer to each question. The remaining time I have left will be used in making small changes in CSS and maybe experiment with the progress text to be a progress bar instead. Then after that is to start write the summary and the text for the quiz. 
+
 > Links:
 > 
 > https://www.w3schools.com/default.asp
