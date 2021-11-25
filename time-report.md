@@ -25,3 +25,6 @@
 
  - 2021-11-15, Worked for 1 hour
  - At the lesson i worked with the restart button and got some help making it work as expected. Then after that I did some CSS to make it look better.
+
+ - 2021-11-25, Worked for 40 minutes
+ - I coded in the rest of the questions with the answer + the right answer. Tested the quiz a few times and it works as expected. 
