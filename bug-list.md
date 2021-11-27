@@ -17,3 +17,6 @@ Fix: Used the "<a>" tag to get the link to work with the button. Removed the lin
 4. Problem: The restart button don't work and can't make the button show only at the end where the score is shown.
 
 Fix: Got help on the lesson to refresh my memory and got some new information that helped me fix my problem. Used for example "appendChild" and got the button to work.
+
+5. Problem: Can't change a prototype into a function.
+Fix:
