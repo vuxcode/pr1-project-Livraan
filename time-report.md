@@ -28,3 +28,6 @@
 
  - 2021-11-25, Worked for 40 minutes
  - I coded in the rest of the questions with the answer + the right answer. Tested the quiz a few times and it works as expected. 
+
+- 2021-11-27, Worked for 1 hour
+- I changed some of the objects to variables and changed the prototypes into functions. For some reason I couldn't change one prototype into a function.
