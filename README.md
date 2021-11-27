@@ -21,6 +21,8 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 
 > Now I have written in all the questions with the answers and the right answer to each question. The remaining time I have left will be used in making small changes in CSS and maybe experiment with the progress text to be a progress bar instead. Then after that is to start write the summary and the text for the quiz. 
 
+> Have began changing the objects and prototypes into variables and functions. Tested and it worked until one of the prototype couldn't be a function. Going to look into it. 
+
 > Links:
 > 
 > https://www.w3schools.com/default.asp
