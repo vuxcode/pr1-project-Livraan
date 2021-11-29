@@ -97,10 +97,10 @@
   <p id="question"></p>
 
   <div class="buttons">
-    <button id="btn0"><span id="choice0"></span></button>
-    <button id="btn1"><span id="choice1"></span></button>
-    <button id="btn2"><span id="choice2"></span></button>
-    <button id="btn3"><span id="choice3"></span></button>
+    <button id="btn0" onclick="checkAnswer()"><span id="choice0"></span></button>
+    <button id="btn1" onclick="checkAnswer()"><span id="choice1"></span></button>
+    <button id="btn2" onclick="checkAnswer()"><span id="choice2"></span></button>
+    <button id="btn3" onclick="checkAnswer()"><span id="choice3"></span></button>
   </div>
 <!--This is the template for the progress-->
   <footer>
@@ -121,7 +121,7 @@ var score = 0;
 
 var questions = questions;
 
-var Index = 0;
+var index = 0;
 
 // The variable for the restart button
 var restartBtn = document.getElementById("Restart-btn")
@@ -129,18 +129,18 @@ var restartBtn = document.getElementById("Restart-btn")
 // This adds properties and methods to the question and a return to stop the function
 // Changed it to a function
 function getQuestionIndex() {
-  return questions[Index];
+  return questions[index];
 }
 // This adds properties and methods to the answers and uses if statement to give a point if the user answers right
 Quiz.prototype.answer = function(answer) {
   if(getQuestionIndex().isCorrectAnswer(answer)) {
   score++;
   }
-  Index++;
+  index++;
 }
 // This tells that the quiz has ended and use return to stop the quiz to continue
 Quiz.prototype.isEnded = function() {
-  return Index === questions.length;
+  return index === questions.length;
 }
 // A function that tells what parts of the questions object belongs to
 function Question(text, choices, answer) {
@@ -171,7 +171,9 @@ function populate() {
     showProgress();
   }
 };
+
 // This creates the function to the buttons
+// Replace with other function
 function answer(id, answer) {
   var button = document.getElementById(id);
   button.onclick = function() {
@@ -182,7 +184,7 @@ function answer(id, answer) {
 };
 // This shows the progress of the quiz
 function showProgress() {
-  var currentQuestionNumber = Index + 1;
+  var currentQuestionNumber = index + 1;
   var element = document.getElementById("progress");
   element.innerHTML = " Question " + currentQuestionNumber + " of " + questions.length;
 };
@@ -202,18 +204,46 @@ function restartGame() {
  restartBtn.classList.add("hidden");
 };
 // This is the stored questions in variables and answers in arrays. Then one of the answers that is correct is stored
+//var questions = [
+//new Question("Who are the founders of Blizzard Entertainment?", ["Michael Morhaime, Allen Adham and Frank Pearce", "Markus Persson, Robert A. Altman and Christopher Weaver", "Trip Hawkins, Markus Persson and Jens Bergensten", "Elon Musk, Steve Jobs and some guy"], "Michael Morhaime, Allen Adham and Frank Pearce"),
+//new Question("How long was Red Dead Redemption 2's story script?", ["2.4 meter high, around 40 - 50 hours of gameplay", "100 meter high, around 300 hours of gameplay", "3 meter high, around 20 hours of gameplay", "Maybe around 10 cm high, around 10 hours of gameplay"], "2.4 meter high, around 40 - 50 hours of gameplay"),
+//new Question("How many copies of Valheim have been sold?", ["7.9 million copies", "3 copies", "1.4 quadrillion copies", "A lot"], "7.9 million copies"),
+//new Question("What is Alt + F4?", ["You get free money", "Nothing", "Forcefully closes down your computer", "Forcefully closes down your active page"], "Forcefully closes down your active page"),
+//new Question("What is a cracked game?", ["A game that is broken", "Someone stole my game!", "A game that people can download without paying for it", "Free games!"], "A game that people can download without paying for it"),
+//new Question("Is hacking The Sims illegal?", ["The developers gave the user hacking tools", "Ofcourse", "It depends what you mean by hacking", "Nope"], "It depends what you mean by hacking"),
+//new Question("Who can you find at Roanoke Valley in Red Dead Redemption 2?", ["Gavin", "A naked man", "Hunters", "Police"], "A naked man"),
+//new Question("What game is Blizzard most well known for?", ["World of Warcraft", "Overwatch", "Diablo", "Hearthstone"], "World of Warcraft"),
+//new Question("What is the best streaming platforms?", ["Discord", "Twitch", "Youtube", "Facebook"], "Twitch"),
+//new Question("How many hours does gamers spend on gaming per week?", ["24/7", "6 - 13 hours", "30 minutes", "What? Do we ever stop gaming?"], "What? Do we ever stop gaming?")
+//];
+
 var questions = [
-new Question("Who are the founders of Blizzard Entertainment?", ["Michael Morhaime, Allen Adham and Frank Pearce", "Markus Persson, Robert A. Altman and Christopher Weaver", "Trip Hawkins, Markus Persson and Jens Bergensten", "Elon Musk, Steve Jobs and some guy"], "Michael Morhaime, Allen Adham and Frank Pearce"),
-new Question("How long was Red Dead Redemption 2's story script?", ["2.4 meter high, around 40 - 50 hours of gameplay", "100 meter high, around 300 hours of gameplay", "3 meter high, around 20 hours of gameplay", "Maybe around 10 cm high, around 10 hours of gameplay"], "2.4 meter high, around 40 - 50 hours of gameplay"),
-new Question("How many copies of Valheim have been sold?", ["7.9 million copies", "3 copies", "1.4 quadrillion copies", "A lot"], "7.9 million copies"),
-new Question("What is Alt + F4?", ["You get free money", "Nothing", "Forcefully closes down your computer", "Forcefully closes down your active page"], "Forcefully closes down your active page"),
-new Question("What is a cracked game?", ["A game that is broken", "Someone stole my game!", "A game that people can download without paying for it", "Free games!"], "A game that people can download without paying for it"),
-new Question("Is hacking The Sims illegal?", ["The developers gave the user hacking tools", "Ofcourse", "It depends what you mean by hacking", "Nope"], "It depends what you mean by hacking"),
-new Question("Who can you find at Roanoke Valley in Red Dead Redemption 2?", ["Gavin", "A naked man", "Hunters", "Police"], "A naked man"),
-new Question("What game is Blizzard most well known for?", ["World of Warcraft", "Overwatch", "Diablo", "Hearthstone"], "World of Warcraft"),
-new Question("What is the best streaming platforms?", ["Discord", "Twitch", "Youtube", "Facebook"], "Twitch"),
-new Question("How many hours does gamers spend on gaming per week?", ["24/7", "6 - 13 hours", "30 minutes", "What? Do we ever stop gaming?"], "What? Do we ever stop gaming?")
+["Who are the founders of Blizzard Entertainment?", 0], 
+["How long was Red Dead Redemption 2's story script?"], 
+["How many copies of Valheim have been sold?"], 
+["What is Alt + F4?"], 
+["What is a cracked game?"], 
+["Is hacking The Sims illegal?"], 
+["Who can you find at Roanoke Valley in Red Dead Redemption 2?"], 
+["What game is Blizzard most well known for?"], 
+["What is the best streaming platforms?"], 
+["How many hours does gamers spend on gaming per week?"]
 ];
+
+var choices = [
+["Michael Morhaime, Allen Adham and Frank Pearce", "Markus Persson, Robert A. Altman and Christopher Weaver", "Trip Hawkins, Markus Persson and Jens Bergensten", "Elon Musk, Steve Jobs and some guy"],
+["2.4 meter high, around 40 - 50 hours of gameplay", "100 meter high, around 300 hours of gameplay", "3 meter high, around 20 hours of gameplay", "Maybe around 10 cm high, around 10 hours of gameplay"],
+["7.9 million copies", "3 copies", "1.4 quadrillion copies", "A lot"],
+["You get free money", "Nothing", "Forcefully closes down your computer", "Forcefully closes down your active page"],
+["A game that is broken", "Someone stole my game!", "A game that people can download without paying for it", "Free games!"],
+["The developers gave the user hacking tools", "Ofcourse", "It depends what you mean by hacking", "Nope"],
+["Gavin", "A naked man", "Hunters", "Police"],
+["World of Warcraft", "Overwatch", "Diablo", "Hearthstone"],
+["Discord", "Twitch", "Youtube", "Facebook"],
+["24/7", "6 - 13 hours", "30 minutes", "What? Do we ever stop gaming?"]
+];
+
+// var correctAnswer = [];
 // This creates the quiz
 var quiz = new Quiz(questions);
 // This displays the quiz
