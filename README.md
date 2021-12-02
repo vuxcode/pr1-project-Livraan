@@ -23,6 +23,8 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 
 > Have began changing the objects and prototypes into variables and functions. Tested and it worked until one of the prototype couldn't be a function. Going to look into it. 
 
+> After getting some help from Colin I have made great progress on my quiz. All the objects and prototypes are replaced. One thing need fixing and that is the check answer function. After that I can focus on the progress bar and eventually the result list.
+
 > Links:
 > 
 > https://www.w3schools.com/default.asp
