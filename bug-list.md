@@ -19,4 +19,7 @@ Fix: Used the "<a>" tag to get the link to work with the button. Removed the lin
 Fix: Got help on the lesson to refresh my memory and got some new information that helped me fix my problem. Used for example "appendChild" and got the button to work.
 
 5. Problem: Can't change a prototype into a function.
+Fix: After getting help from Colin I could replace the prototype into another function and delete that prototype completly.
+
+6. Problem: When clicking on random choices the function that checks the answers tells that every choice is correct, even the wrong answers. So now the user gets 10 out of 10 in score no matter what the user answers.
 Fix:
