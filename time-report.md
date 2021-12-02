@@ -31,3 +31,6 @@
 
 - 2021-11-27, Worked for 1 hour
 - I changed some of the objects to variables and changed the prototypes into functions. For some reason I couldn't change one prototype into a function.
+
+- 2021-12-02, Worked for 1 hour
+- Have changed every prototype and object to a variable, function and 2d arrays. Now I just need to make the check answers function check if one answer is correct and the others wrong. Because now every choice I click is the correct one when I try the quiz. I get 10 out of 10 every time.
