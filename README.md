@@ -25,6 +25,14 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 
 > After getting some help from Colin I have made great progress on my quiz. All the objects and prototypes are replaced. One thing need fixing and that is the check answer function. After that I can focus on the progress bar and eventually the result list.
 
+> I finally got the help to fix my previous problem. It was just one tiny detail that was wrong and I got an "aha" moment. Now the quiz works as expected. I then removed the unnecessary comments with the obejcts and prototypes that was left. Then made some new comments to every step in the code so I can understand it easier. 
+> 
+> What's left on the list are:
+>
+> * Creating a progress bar instead of "progress text"
+> 
+> * Creating a result page where every question is displayed. If the user answered wrong on one question the text of that question are red, if the user answered right the text of that question will be green. The answers will not be displayed.
+
 > Links:
 > 
 > https://www.w3schools.com/default.asp
