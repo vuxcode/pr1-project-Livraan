@@ -110,6 +110,7 @@
 </div>
 <!--This is the template for the restart button-->
 <button id="Restart-btn" class="hidden" onclick="restartGame()">Restart</button>
+
 <script>
 
 // Variable for the score
@@ -125,14 +126,14 @@ var restartBtn = document.getElementById("Restart-btn")
 var questions = [
 ["Who are the founders of Blizzard Entertainment?", 0], 
 ["How long was Red Dead Redemption 2's story script?", 0], 
-["How many copies of Valheim have been sold?"], 
-["What is Alt + F4?"], 
-["What is a cracked game?"], 
-["Is hacking The Sims illegal?"], 
-["Who can you find at Roanoke Valley in Red Dead Redemption 2?"], 
-["What game is Blizzard most well known for?"], 
-["What is the best streaming platforms?"], 
-["How many hours does gamers spend on gaming per week?"]
+["How many copies of Valheim have been sold?", 0], 
+["What is Alt + F4?", 3], 
+["What is a cracked game?", 2], 
+["Is hacking The Sims illegal?", 2], 
+["Who can you find at Roanoke Valley in Red Dead Redemption 2?", 1], 
+["What game is Blizzard most well known for?", 0], 
+["What is the best streaming platforms?", 0], 
+["How many hours does gamers spend on gaming per week?", 3]
 ];
 
 // This is the stored choices that is stored in an 2d array
@@ -142,110 +143,89 @@ var choices = [
 ["7.9 million copies", "3 copies", "1.4 quadrillion copies", "A lot"],
 ["You get free money", "Nothing", "Forcefully closes down your computer", "Forcefully closes down your active page"],
 ["A game that is broken", "Someone stole my game!", "A game that people can download without paying for it", "Free games!"],
-["The developers gave the user hacking tools", "Ofcourse", "It depends what you mean by hacking", "Nope"],
+["The developers gave the user hacking tools", "Of course", "It depends what you mean by hacking", "Nope"],
 ["Gavin", "A naked man", "Hunters", "Police"],
 ["World of Warcraft", "Overwatch", "Diablo", "Hearthstone"],
 ["Discord", "Twitch", "Youtube", "Facebook"],
 ["24/7", "6 - 13 hours", "30 minutes", "What? Do we ever stop gaming?"]
 ];
 
-// This adds properties and methods to the question and a return to stop the function
-// Changed it to a function
-//function getQuestionIndex() {
-// return questions[index];
-//}
-
-function checkAnswer(choices) {
-  if (true) {
+// This is a function that matches the question to the choice user clicked on.
+function checkAnswer(choice) {
+  
+  //console.log(choice)
+  //console.log(questions[index][1])
+  
+  // If the user clicked on the right choice the score increases with one point
+  if (questions[index][1]==choice) {
     console.log("Correct answer!")
+    
     // This is for the list with results
    //resultlist[index] = true;
+   
+   score++;
   }
   else {
-    console.log("Wrong answer!")
+    // If the user clicked the wrong choice the user gets no points
+    
+    //console.log("Wrong answer!")
    // This is for the list with results
   //resultlist[index] = false;
   }
   index++;
-  
   populate();
 }
 
-// This adds properties and methods to the answers and uses if statement to give a point if the user answers right
-//Quiz.prototype.answer = function(answer) {
-  //if() {
-  //score++;
-  //}
-  //index++;
-//}
-
-// This tells that the quiz has ended and use return to stop the quiz to continue
-function gameOver() {
- return index === questions.length;
-}
-
-// A function that tells what parts of the questions object belongs to
-//function Question(text, choices, answer) {
-  //this.text = text;
-  //this.choices = choices;
-  //this.answer = answer;
-//}
-
-// This is about if the answer is correct
-//Question.prototype.isCorrectAnswer = function(choice) {
-  //return this.answer === choice;
-//}
-
-// This creates a function that displays the questions and the for-loop goes through the answers to check if the user clicked the correct answer
-// It also shows the progress and if the quiz has ended it's gonna display the 'end' function
+// This creates a function that displays the questions 
 function populate() {
-  if (gameOver()) {
+  // If the quiz has ended it's gonna display the final score function
+  if (index === questions.length) {
     showScores();
   }
   else {
+    // This gets the question template by ID in the HTML part
     var element = document.getElementById("question");
+    // This displays the current question
     element.innerText = questions[index][0];
 
-    // var choices = getQuestionIndex().choices;
+    // A for-loop goes through the answers
     for(var i = 0; i < 4; i++) {
+      // This gets the choices template by ID in the HTML part
       var element = document.getElementById("choice" + i);
+      // This displays the current choices
       element.innerText = choices[index][i];
-      ("btn" + i, choices[i]);
     }
-    score++;
+    // This displays the progress function
     showProgress();
   }
 };
 
-// This creates the function to the buttons
-// Replace with other function
-//function answer(id, answer) {
-  //var button = document.getElementById(id);
-  //button.onclick = function() {
-    //quiz.answer(answer);
-    //populate();
-  //}
-//};
-
-// This shows the progress of the quiz
+// This is the function to show the users progress
 function showProgress() {
+  // This is a variable that tells the function to increas the progress number alonside the questions
   var currentQuestionNumber = index + 1;
+  // This gets the progress template by ID progress
   var element = document.getElementById("progress");
+  // This displays the current progress
   element.innerHTML = " Question " + currentQuestionNumber + " of " + questions.length;
 };
-// This shows in the end of the quiz what scores the user got
+// This is the function that shows the users final score at the end of the quiz
 function showScores() {
+  // Showing and displaying the result out of total result
   var gameOverHTML = "<h1>Result</h1>";
   gameOverHTML += "<h2 id='score'> Result: <br>" + score + " out of " + questions.length +"</h2>";
   var element = document.getElementById("quiz");
   element.innerHTML = gameOverHTML;
+  // This makes the restart button show up
   element.appendChild(restartBtn)
   restartBtn.classList.remove("hidden");
 };
 
 // This is the function for the restart button so the game restarts
 function restartGame() {
+  // Reload the page
  document.location.reload();
+ // Makes the button hidden through out the quiz until the end of the quiz
  restartBtn.classList.add("hidden");
 };
 
