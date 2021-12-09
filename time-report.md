@@ -34,3 +34,6 @@
 
 - 2021-12-02, Worked for 1 hour
 - Have changed every prototype and object to a variable, function and 2d arrays. Now I just need to make the check answers function check if one answer is correct and the others wrong. Because now every choice I click is the correct one when I try the quiz. I get 10 out of 10 every time.
+
+- 2021-12-09, Worked for 1 hour and 30 minutes
+- After the help from Colin I could finally make the check for answer function work as expected. I just had one tiny detail off and now it works. I then removed all the comments with unnecessary code and comments that wasn't for any use anymore. After that I wrote some comment on every part of the code to make me understand the code in the future.
