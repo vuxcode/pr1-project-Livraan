@@ -37,3 +37,6 @@
 
 - 2021-12-09, Worked for 1 hour and 30 minutes
 - After the help from Colin I could finally make the check for answer function work as expected. I just had one tiny detail off and now it works. I then removed all the comments with unnecessary code and comments that wasn't for any use anymore. After that I wrote some comment on every part of the code to make me understand the code in the future.
+
+- 2021-12-13, Worked for 1 hour and 20 minutes
+- Have been experimenting with a progress bar and haven't made any great progress. Have saved what I have done in comments and gonna return to look at it again. Not sure if I can figure this one out. 
