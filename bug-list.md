@@ -25,3 +25,7 @@ Fix: After getting help from Colin I could replace the prototype into another fu
 6. Problem: When clicking on random choices the function that checks the answers tells that every choice is correct, even the wrong answers. So now the user gets 10 out of 10 in score no matter what the user answers.
 
 Fix: After some directions from Colin I found the right way to make the "checkAnswer" function work by if-statement and then (questions[index][1]==choice).
+
+7. Problem: When creating the function for the progress bar one and saving the file the console log says that one element is not defined. 
+
+Fix:
