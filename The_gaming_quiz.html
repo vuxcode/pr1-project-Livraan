@@ -81,33 +81,51 @@
      font-size: 300%;
     color: rgb(255, 0, 200);
     }
-
+    /*#progressbar {
+      width: 100%;
+      background-color: blue;
+    } */
+    /*#bar {
+      width: 10%;
+      height: 30px;
+      background-color: crimson;
+      text-align: center;
+      line-height: 30px;
+      color: cyan;
+    } */
     #progress {
      color: rgb(212, 0, 255);
      font-family: 'Times New Roman', Times, serif;
      font-size: 200%;
-    }
+    } 
 
 </style>
 </head>
 <body>
+
 <!--This is a template for the questions and the answer buttons-->
 <div class="grid">
   <div id="quiz">
   <p id="question"></p>
 
   <div class="buttons">
-    <button id="btn0" onclick="checkAnswer(0)"><span id="choice0"></span></button>
+    <button id="btn0" onclick="checkAnswer(0)" onclick="progressBar()"><span id="choice0"></span></button>
     <button id="btn1" onclick="checkAnswer(1)"><span id="choice1"></span></button>
     <button id="btn2" onclick="checkAnswer(2)"><span id="choice2"></span></button>
     <button id="btn3" onclick="checkAnswer(3)"><span id="choice3"></span></button>
   </div>
+
 <!--This is the template for the progress-->
   <footer>
     <p id="progress">Question x of y</p>
   </footer>
+
+  <!--<div id="progressbar">
+    <div id="bar">1</div>
+  </div>-->
 </div>
 </div>
+
 <!--This is the template for the restart button-->
 <button id="Restart-btn" class="hidden" onclick="restartGame()">Restart</button>
 
@@ -118,6 +136,8 @@ var score = 0;
 
 // Variable for the questions
 var index = 0;
+
+var i = 0;
 
 // The variable for the restart button
 var restartBtn = document.getElementById("Restart-btn")
@@ -196,19 +216,57 @@ function populate() {
       element.innerText = choices[index][i];
     }
     // This displays the progress function
+    // showProgress();
     showProgress();
   }
 };
 
 // This is the function to show the users progress
-function showProgress() {
-  // This is a variable that tells the function to increas the progress number alonside the questions
+ function showProgress() {
+  // This is a variable that tells the function to increase the progress number alonside the questions
   var currentQuestionNumber = index + 1;
   // This gets the progress template by ID progress
   var element = document.getElementById("progress");
   // This displays the current progress
   element.innerHTML = " Question " + currentQuestionNumber + " of " + questions.length;
-};
+}; 
+
+/* function progressBar() {
+var currentQuestionNumber = index + 1;
+var elememt = document.getElementById("bar");
+var width = 1;
+var id = setInterval(frame, 10);
+function frame() {
+  if (width >= 100) {
+    clearInterval(id);
+  } else {
+    width++;
+element.style.width = width + "%";
+element.innerHTML = width + "%";
+   }
+    }
+     };
+/* 
+  if (i == 0) {
+i = 1;
+var elememt = document.getElementById("bar");
+var width = 10;
+var id = setInterval(frame, 10);
+function frame() {
+  if (width >= 100) {
+    clearInterval(id);
+    i = 0;
+  } else {
+    width++;
+    elem.style.width = width + "%";
+    element.innerText = width + "%";
+  }
+   }
+    }
+     };
+*/
+
+
 // This is the function that shows the users final score at the end of the quiz
 function showScores() {
   // Showing and displaying the result out of total result
