@@ -33,6 +33,8 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 > 
 > * Creating a result page where every question is displayed. If the user answered wrong on one question the text of that question are red, if the user answered right the text of that question will be green. The answers will not be displayed.
 
+> The progress bar was more difficult than I thought. It seems that I can't make it work with my other code. Will try some more and if I can't I will skip that for now and try to focus on the result list.
+
 > Links:
 > 
 > https://www.w3schools.com/default.asp
