@@ -81,23 +81,30 @@
      font-size: 300%;
     color: rgb(255, 0, 200);
     }
-    /*#progressbar {
-      width: 100%;
-      background-color: blue;
-    } */
-    /*#bar {
+    #progress {
+      width: 97%;
+      background-color: rgb(54, 54, 58);
+      border-radius: 10%;
+      display: flex;
+    
+    } 
+    #bar {
       width: 10%;
       height: 30px;
-      background-color: crimson;
+      background-color: rgb(76, 0, 255);
       text-align: center;
       line-height: 30px;
-      color: cyan;
-    } */
-    #progress {
+      font-size: 150%;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(255, 0, 255);
+      border-radius: 10%;
+     
+    } 
+   /* #progress {
      color: rgb(212, 0, 255);
      font-family: 'Times New Roman', Times, serif;
      font-size: 200%;
-    } 
+    }*/ 
 
 </style>
 </head>
@@ -110,19 +117,15 @@
 
   <div class="buttons">
     <button id="btn0" onclick="checkAnswer(0)" onclick="progressBar()"><span id="choice0"></span></button>
-    <button id="btn1" onclick="checkAnswer(1)"><span id="choice1"></span></button>
-    <button id="btn2" onclick="checkAnswer(2)"><span id="choice2"></span></button>
-    <button id="btn3" onclick="checkAnswer(3)"><span id="choice3"></span></button>
+    <button id="btn1" onclick="checkAnswer(1)" onclick="progressBar()"><span id="choice1"></span></button>
+    <button id="btn2" onclick="checkAnswer(2)" onclick="progressBar()"><span id="choice2"></span></button>
+    <button id="btn3" onclick="checkAnswer(3)" onclick="progressBar()"><span id="choice3"></span></button>
   </div>
 
-<!--This is the template for the progress-->
-  <footer>
-    <p id="progress">Question x of y</p>
-  </footer>
-
-  <!--<div id="progressbar">
-    <div id="bar">1</div>
-  </div>-->
+<div id="progress">
+  <div id="bar">
+  </div>
+</div>
 </div>
 </div>
 
@@ -137,7 +140,8 @@ var score = 0;
 // Variable for the questions
 var index = 0;
 
-var i = 0;
+// Variable for the progressbar
+var width = 5;
 
 // The variable for the restart button
 var restartBtn = document.getElementById("Restart-btn")
@@ -217,55 +221,34 @@ function populate() {
     }
     // This displays the progress function
     // showProgress();
-    showProgress();
+    progressBar();
   }
 };
 
-// This is the function to show the users progress
- function showProgress() {
-  // This is a variable that tells the function to increase the progress number alonside the questions
-  var currentQuestionNumber = index + 1;
-  // This gets the progress template by ID progress
-  var element = document.getElementById("progress");
-  // This displays the current progress
-  element.innerHTML = " Question " + currentQuestionNumber + " of " + questions.length;
-}; 
-
-/* function progressBar() {
+// This is the function of the progressbar
+ function progressBar() {
+// This makes it possible for the program to add one number in the progress after the user clicks one button
 var currentQuestionNumber = index + 1;
-var elememt = document.getElementById("bar");
-var width = 1;
+// This the bar template of the progressbar
+var element = document.getElementById("bar");
+// This sets how fast the bar fills up when hitting the button
 var id = setInterval(frame, 10);
-function frame() {
-  if (width >= 100) {
-    clearInterval(id);
-  } else {
-    width++;
-element.style.width = width + "%";
-element.innerHTML = width + "%";
-   }
-    }
-     };
-/* 
-  if (i == 0) {
-i = 1;
-var elememt = document.getElementById("bar");
-var width = 10;
-var id = setInterval(frame, 10);
-function frame() {
-  if (width >= 100) {
-    clearInterval(id);
-    i = 0;
-  } else {
-    width++;
-    elem.style.width = width + "%";
-    element.innerText = width + "%";
-  }
-   }
-    }
-     };
-*/
 
+// This is the function for the setInterval ID
+function frame() {
+// This makes the text show and update the current questionnumber
+  if (width <= 100) {
+  // This makes the bar reset if the quiz ends or the page is refreshed
+  clearInterval(id);
+// This is how much the bar fills up  after each question
+    width+= 10;
+// This tells how much the bar fills up in percentage 
+element.style.width = width + "%";
+// This displays the current question and total number of question inside the progress bar
+element.innerHTML = currentQuestionNumber + " / " + questions.length;
+  }
+ }
+};
 
 // This is the function that shows the users final score at the end of the quiz
 function showScores() {
