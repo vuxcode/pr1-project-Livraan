@@ -35,6 +35,8 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 
 > The progress bar was more difficult than I thought. It seems that I can't make it work with my other code. Will try some more and if I can't I will skip that for now and try to focus on the result list.
 
+> I'm so happy! I got the progress bar to work as I wanted. One thing I had done wrong was spelling "element" wrong and that's why I got an error on console log. Now that is sorted I will move over to the result list. If I can't make it work I will jump over that one.
+
 > Links:
 > 
 > https://www.w3schools.com/default.asp
