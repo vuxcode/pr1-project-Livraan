@@ -28,4 +28,4 @@ Fix: After some directions from Colin I found the right way to make the "checkAn
 
 7. Problem: When creating the function for the progress bar one and saving the file the console log says that one element is not defined. 
 
-Fix:
+Fix: Via different sources I got the help to make the bar work. I had spelled element wrong and it was mostly that made the console log error.
