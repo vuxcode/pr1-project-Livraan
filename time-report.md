@@ -40,3 +40,6 @@
 
 - 2021-12-13, Worked for 1 hour and 20 minutes
 - Have been experimenting with a progress bar and haven't made any great progress. Have saved what I have done in comments and gonna return to look at it again. Not sure if I can figure this one out. 
+
+-2021-12-14/15, Worked for 2 hours
+- I have made the progress bar work! With some experimenting and looking around on Google I got the help I needed to make it work as expected.
