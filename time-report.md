@@ -43,3 +43,7 @@
 
 -2021-12-14/15, Worked for 2 hours
 - I have made the progress bar work! With some experimenting and looking around on Google I got the help I needed to make it work as expected.
+
+- 2021-12-17/18, Worked for 2 hours and 30 minutes
+- Have written the project summary and commit it on GitHub. Have jumped into my quiz, checked that everything worked. Changed a console.log into a comment (to save for the future). Then I changed the game over text to "Congratulations!
+You have finished the quiz".
