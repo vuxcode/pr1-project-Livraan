@@ -176,7 +176,7 @@ function checkAnswer(choice) {
   
   // If the user clicked on the right choice the score increases with one point
   if (questions[index][1]==choice) {
-    console.log("Correct answer!")
+   // console.log("Correct answer!")
     
     // This is for the list with results
    //resultlist[index] = true;
@@ -214,7 +214,6 @@ function populate() {
       element.innerText = choices[index][i];
     }
     // This displays the progress function
-    // showProgress();
     progressBar();
   }
 };
@@ -248,7 +247,7 @@ element.innerHTML = currentQuestionNumber + " / " + questions.length;
 function showScores() {
   // Showing and displaying the result out of total result
   var gameOverHTML = "<h1>Result</h1>";
-  gameOverHTML += "<h2 id='score'> Result: <br>" + score + " out of " + questions.length +"</h2>";
+  gameOverHTML += "<h2 id='score'> Congratulations! <br> You have finished the quiz <br>" + score + " out of " + questions.length +"</h2>";
   var element = document.getElementById("quiz");
   element.innerHTML = gameOverHTML;
   // This makes the restart button show up
