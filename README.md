@@ -1,7 +1,5 @@
 # Project Notes
 
-> You can use this section of the file to keep notes about your project as you work on it.
-
 > I have now set up everything, all i need to do is to start code the program. I feel like this program is gonna be too hard for me to do, because there is different types of language you need to use. Language I haven't used.
 
 > Now when I have finally understand that we have learned the code i'm gonna use (face palm), thanks to Colin. I'm gonna learn CSS though but with the help of different websites I think it will be ok. I have done the beginning of my code now and it works really good. Some videos I have noticed been outdated because it didn't work when I was experimenting with my code. But now I have found a code that works.
