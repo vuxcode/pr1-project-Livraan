@@ -34,6 +34,8 @@
 
 > I'm so happy! I got the progress bar to work as I wanted. One thing I had done wrong was spelling "element" wrong and that's why I got an error on console log. Now that is sorted I will move over to the result list. If I can't make it work I will jump over that one.
 
+> Now I have done some last checks on the program and written the Project Summary and the User Guide. Have loaded everything I have done and written the comments in my code. Unfortunately I don't have the time to create a result page, but I still have the comments for storing the answers. So that I can use them in the future, if I want to try to figure out how to make the result page.
+
 > Links:
 > 
 > https://www.w3schools.com/default.asp
