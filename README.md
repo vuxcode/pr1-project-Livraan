@@ -1,7 +1,4 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=5999857&assignment_repo_type=AssignmentRepo)
 # Project Notes
-
-Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brief/
 
 > You can use this section of the file to keep notes about your project as you work on it.
 
@@ -52,11 +49,8 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 > https://www.youtube.com/watch?v=riDzcEQbX6k&t=202s
 > https://webdevtrick.com/create-javascript-quiz-program/
 
-REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
 # Project Summary
-
-> Remember that before the final submission date you should include a "PROJECT SUMMARY" in this section here.
  
 > In the beginning I thought that my idea shouldn't be too difficult to develop, but over time I realized that it was much more difficult than I planned. The first I tried to do was researching some code in W3 School. When I did the start page for my quiz I learned a new code language, CSS. It makes my program look better and I can change how everything looks. That was easy, after that I made a button that was gonna start the quiz. Then next problem came, I didn't know how to make a button to direct to my code for the quiz. After some hours of looking through videos and google searching I found a solution, I created a new file where my quiz code was gonna be. Then I linked that file in the button and it worked. 
 >
@@ -87,4 +81,10 @@ REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
 # User Guide
 
-> Write a clear user guide for how someone should use your program.
+> First the player gets a start screen where the quiz name "The Gaming Quiz" is in a big text, under that the player has the start button. When the player hovers over the button lights up, when clicking on it the first question comes up. This game is a 10 question quiz where the player gets four different choices to chose from, also the game doesn't progress until the player have answered. The theme of the quiz is about different games or things surrounding gaming. Some of the answers can be misleading and the player needs to think before answering. 
+>
+> The four choices are in form of four buttons the player clicks on, when the player hovers over each button they lights up as the start button does. In that way the player sees what button they hover over, so they don't mistakenly clicks on a button they didn't meant to click on. There are only one correct answer for each question. When a player clicks on one of the buttons the player will not get any confirmation that the player answered right or wrong. The player also sees a progress bar so they can see how much they progressed through the quiz, every time the player answers the bar fills up little by little. 
+>
+> After the player has answered all 10 questions they get an end game page. Here the player gets a message: "Congratulations, you have finished the quiz!" and under that text the player sees how many questions they answered right in form of points, example: "5/10". At last the player has one button on the end game page, the restart button. The player can therefore restart the quiz and test the questions again. 
+>
+> Hope you enjoy the quiz!
