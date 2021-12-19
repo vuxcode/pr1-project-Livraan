@@ -47,3 +47,6 @@
 - 2021-12-17/18, Worked for 2 hours and 30 minutes
 - Have written the project summary and commit it on GitHub. Have jumped into my quiz, checked that everything worked. Changed a console.log into a comment (to save for the future). Then I changed the game over text to "Congratulations!
 You have finished the quiz".
+
+- 2021-12-19, Worked for 1 hour and 40 minutes
+- Tested the quiz again to make sure everything is woring as expected and I have written the user guide on GitHub.
