@@ -29,3 +29,7 @@ Fix: After some directions from Colin I found the right way to make the "checkAn
 7. Problem: When creating the function for the progress bar one and saving the file the console log says that one element is not defined. 
 
 Fix: Via different sources I got the help to make the bar work. I had spelled element wrong and it was mostly that made the console log error.
+
+8. Problem: When sending the program to my boyfriend I discovered that it couldn't find the file for the actual quiz if I just send the start screen. Therefore the whole code (startscreen and quiz) needs to be in one single file.
+
+Fix:
