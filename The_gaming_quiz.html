@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
     /* This is all the CSS for the quiz */
     body {background-color: rgb(0, 0, 0);
@@ -102,11 +101,10 @@
     } 
 </style>
 </head>
-<body>
 
 <!--This is a template for the questions and the answer buttons-->
 <div class="grid">
-  <div id="quiz">
+ <div id="quiz">
   <p id="question"></p>
 
   <div class="buttons">
@@ -116,6 +114,10 @@
     <button id="btn3" onclick="checkAnswer(3)" onclick="progressBar()"><span id="choice3"></span></button>
   </div>
 
+  <!--<div class="startscreen">
+    <p id="title"></p>
+   </div>-->
+
 <div id="progress">
   <div id="bar">
   </div>
@@ -123,9 +125,10 @@
 </div>
 </div>
 
+<!--<button id="Start-btn"onclick="startGame()">Start</button>-->
+
 <!--This is the template for the restart button-->
 <button id="Restart-btn" class="hidden" onclick="restartGame()">Restart</button>
-
 <script>
 
 // Variable for the score
@@ -167,6 +170,12 @@ var choices = [
 ["Discord", "Twitch", "Youtube", "Facebook"],
 ["24/7", "6 - 13 hours", "30 minutes", "What? Do we ever stop gaming?"]
 ];
+
+/*function startGame() {
+var element = document.getElementById("title");
+element.innerText = 
+}*/
+
 
 // This is a function that matches the question to the choice user clicked on.
 function checkAnswer(choice) {
@@ -233,7 +242,7 @@ function frame() {
   if (width <= 100) {
   // This makes the bar reset if the quiz ends or the page is refreshed
   clearInterval(id);
-// This is how much the bar fills up  after each question
+// This is how much the bar fills up after each question
     width+= 10;
 // This tells how much the bar fills up in percentage 
 element.style.width = width + "%";
@@ -265,7 +274,6 @@ function restartGame() {
 
 // This starts and displays the quiz
 populate();
-
 </script>
 </body>
 </html>
