@@ -34,6 +34,8 @@
 
 > Now I have done some last checks on the program and written the Project Summary and the User Guide. Have loaded everything I have done and written the comments in my code. Unfortunately I don't have the time to create a result page, but I still have the comments for storing the answers. So that I can use them in the future, if I want to try to figure out how to make the result page.
 
+> Of course at the last minute a problem came. I tried to send my quiz to my boyfriend and of course he couldn't start it. Because he didn't have the code for the actual quiz when I sent only the code for the startscreen. What I need to do now is to add the startscreen into the rest of the code. Have tried on my own but can't make it work.
+
 > Links:
 > 
 > https://www.w3schools.com/default.asp
@@ -60,6 +62,10 @@
 >
 > I had some problem making the program go through all the choices and pick up the one that was correct. I stored the question in one 2D array and the answers in another 2D array. A for-loop will then go through the answers and pick out the right one. The problem was that I couldn't link the right choice to the question, after some work with help of my teacher I made it work in a function with an if-statment and else-statement. Then after that I wanted to change the progress into a progress bar, instead of a text saying "y out of x" I wanted a bar that filled up after each click on the button and in the bar it would say "y/x". This took a little while because I needed to make the code I found go in and work with my code. After some work with it I could get it to work as expected. Made some CSS and got the function to write the current question and the number of total questions. 
 >
+> But then at the last day until deadline I got antoher problem. I wanted my boyfriend to try my quiz, but when I sent the start file for the program it couldn't find the actual quiz. Because the startscreen isn't connected properly to the rest of the code. I tried and tried to figure it out on my own, but nothing worked for some reason. So I again needed some pushing into the right direction.
+
+
+
 > After this time with the project I have learned how to code in different ways and see how it works. In the lesson notes I could get an idea on how it works, though I needed some help to get that code to work in other ways than what it says in the notes. The lesson notes could have had some more challenges, example that there is a code that is not finished and you need to make it work with what you learned on that lesson, then show it to the teacher. In that way the teacher also sees how much the person is learning and understands, if someone don't understands it they could get a repetition on that lesson or the whole class gets an repetition. 
 >
 > I'm happy that I chose to do a quiz because I learned a lot more and it really worked for me to take an advanced code and replace it with the type of code I have learned. What I have hoped to make before the projects deadline was to make the users choices stored and then they could click on a result button that gets the user to a page that had all the questions lined up in columns. If the user had answered right the questions text would be green, if the user answered wrong the text would be red. I have the beginning of that code ready but I can't get to the next part, to make a function that opens up a new page and shows the result. I didn't want the user to know the answers and just show what question the user had answered right. 
