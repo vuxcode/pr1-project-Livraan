@@ -50,3 +50,6 @@ You have finished the quiz".
 
 - 2021-12-19, Worked for 1 hour and 40 minutes
 - Tested the quiz again to make sure everything is woring as expected and I have written the user guide on GitHub.
+
+- 2021-12-20, Worked for 40 minutes
+- I tested to send my quiz to my boyfriend because I wanted him to see and test the quiz. But when he pressed start it said that it couldn't find the file for my actual quiz. I earlier linked my quiz file to the start screen button but if the file isn't in the persons computer it can't be found. So adding this to the bug-list, summary and updating my code to Github.
