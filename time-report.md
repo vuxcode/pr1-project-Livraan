@@ -53,3 +53,6 @@ You have finished the quiz".
 
 - 2021-12-20, Worked for 40 minutes
 - I tested to send my quiz to my boyfriend because I wanted him to see and test the quiz. But when he pressed start it said that it couldn't find the file for my actual quiz. I earlier linked my quiz file to the start screen button but if the file isn't in the persons computer it can't be found. So adding this to the bug-list, summary and updating my code to Github.
+
+- 2021-12-22, Worked for 1 hour and 50 minutes
+- I got some help from Colin to figure out how to make the start screen be in the same file as the quiz. I just needed to copy paste the start button and game title into the quiz code. Made some classes hidden so I could decide in functions when they shall show up on the screen. Tested and did some comments on a idea how to make the result page. Now it works as expected. 
