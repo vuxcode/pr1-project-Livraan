@@ -5,105 +5,187 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* This is all the CSS for the quiz */
-    body {background-color: rgb(0, 0, 0);
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-      margin: 0
-    }
-    .grid {
-     text-align: center;
-     padding: 0;
-     width: 800px;
-     max-width: 80%;
-     min-width: 800px;
-     position: sticky;
-    }
-    .buttons {
-      margin-top: 50px;
-    }
-    #btn0, #btn1, #btn2, #btn3 {
-     background-color: rgb(0, 247, 255);
-     border: none;
-     padding: 20px 50px;
-     text-align: center;
-     text-decoration: none;
-     font-family: Arial, Helvetica, sans-serif;
-     font-size: 15px;
-     position:static;
-     cursor: pointer;
-     border-radius: 30%;
-     width: 350px;
-     margin: 10px 30px 20px 0px;
-    }
-    #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
-      box-shadow: 0 6px 20px 0 rgb(212, 0, 255);
-    }   
-    .btn-grid {
-     display: center;
-     gap: 10px;
-     grid-template-columns: repeat(2, auto);
-     display: inline-block;
-    }
-    #score {
-     text-align: center;
-     color: rgb(98, 0, 255);
-     font-size: 300%;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .hidden {
-      display: none;
-    }
-    #Restart-btn {
-      background-color: rgb(0, 225, 255);
-      font-size: 200%;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-      padding: 20px 30px;
-      border-radius: 30%;
-      border: none;
-      width: 160px;
-      position: static;
-      margin: auto;
-    }
-    #Restart-btn:hover {
-      box-shadow: 0 6px 20px 0 rgb(212, 0, 255);
-    }
-    .grid #question {
-     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     font-size: 300%;
-    color: rgb(255, 0, 200);
-    }
-    #progress {
-      width: 97%;
-      background-color: rgb(54, 54, 58);
-      border-radius: 10%;
-      display: flex;
-    
-    } 
-    #bar {
-      width: 10%;
-      height: 30px;
-      background-color: rgb(76, 0, 255);
-      text-align: center;
-      line-height: 30px;
-      font-size: 150%;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      color: rgb(255, 0, 255);
-      border-radius: 10%;
-     
-    } 
+
+/* This changes the color of the text, font and size*/
+  .container {color: #ea00ff;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 500%;
+/* This makes the text shine, like a street sign */
+   text-shadow: 1px 1px 2px rgb(255, 0, 200), 0 0 25px rgb(255, 0, 200), 0 0 5px rgb(255, 0, 221);
+/* This postions the text in the center a little bit higher than middle of the page*/
+   text-align: center;
+   padding: 0;
+   width: 800px;
+   max-width: 80%;
+   min-width: 800px;
+   position: sticky;
+/* This makes the text not collapsing when the window is resized */
+   white-space: nowrap;
+} 
+/* This creates a button with rounded corners with a background color, */
+/* adds a text, change font, color and where the text is positioned in the box */
+  .start-button {
+   background-color: rgb(0, 247, 255);
+   border: none;
+   padding: 30px 50px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 30px;
+/* This postions the box under the title and in the middle of the screen */
+   position:static;
+   cursor: pointer;
+/* This changes the size of the box */
+   border-radius: 30%;
+}
+/* This changes the color of the text and the color when the button is pressed */
+  a {
+   color: rgb(255, 0, 157);
+   text-decoration: none;
+}
+  a:active {
+   color: rgb(38, 0, 255);
+}
+/* This makes the button cast a glooming shadow when the cursor is hovering over the button */
+  .button:hover {
+   box-shadow: 0 255px 212px 0 rgb(255, 0, 212), 0 6px 20px 0 rgb(212, 0, 255);
+} 
+  .button-grid {
+   display: center;
+   gap: 10px;
+   grid-template-columns: repeat(2, auto);
+   margin: 80px 100px;
+}
+/* This is all the CSS for the quiz */
+  body {background-color: rgb(0, 0, 0);
+   height: 100vh;
+   width: 100vw;   
+   display: flex;
+   justify-content: center;
+   align-items: center;   
+   padding: 0;   
+   margin: 0         
+}
+  .grid {
+   text-align: center;
+   padding: 0;
+   width: 800px;
+   max-width: 80%;
+   min-width: 800px;
+   position: sticky;
+}
+  .buttons {  
+   margin-top: 50px;   
+}
+   #btn0, #btn1, #btn2, #btn3 { 
+   background-color: rgb(0, 247, 255);
+   border: none;  
+   padding: 20px 50px;  
+   text-align: center;  
+   text-decoration: none;  
+   font-family: Arial, Helvetica, sans-serif;  
+   font-size: 15px;  
+   position:static;  
+   cursor: pointer;  
+   border-radius: 30%;  
+   width: 350px;  
+   margin: 10px 30px 20px 0px;  
+}
+  #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {  
+   box-shadow: 0 6px 20px 0 rgb(212, 0, 255);
+}   
+  .btn-grid {
+   display: center;
+   gap: 10px;
+   grid-template-columns: repeat(2, auto);
+   display: inline-block;
+}
+  #score {  
+   text-align: center;
+   color: rgb(98, 0, 255);
+   font-size: 300%;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  .hidden {
+   display: none;
+}
+  #Restart-btn {
+   background-color: rgb(0, 225, 255);
+   font-size: 200%;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+   text-decoration: none;
+   cursor: pointer;
+   padding: 20px 30px;
+   border-radius: 30%;
+   border: none;
+   width: 160px;
+   position: static;
+   margin: auto;
+}
+  #Restart-btn:hover {
+   box-shadow: 0 6px 20px 0 rgb(212, 0, 255);
+}
+  .grid #question {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 300%;
+   color: rgb(255, 0, 200);
+}
+  #progress {
+   width: 97%;
+   background-color: rgb(54, 54, 58);
+   border-radius: 10%;
+   display: flex;
+} 
+  #bar {
+   width: 10%;
+   height: 30px;
+   background-color: rgb(76, 0, 255);
+   text-align: center;
+   line-height: 30px;
+   font-size: 150%;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: rgb(255, 0, 255);
+   border-radius: 10%;
+}
+/* This is the CSS for the result page
+.correct {
+  color: greenyellow;
+}
+.wrong {
+  color: red;
+}
+#result {
+  color: white;
+}
+#Result-btn {
+  background-color: rgb(0, 225, 255);
+  font-size: 200%;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+   text-decoration: none;
+   cursor: pointer;
+   padding: 20px 30px;
+   border-radius: 30%;
+   border: none;
+}
+#Result-btn:hover {
+   box-shadow: 0 6px 20px 0 rgb(212, 0, 255);
+} */
 </style>
 </head>
+<!--This is a template for the start screen and a start button-->
+<div id="start-screen" class="container">
+  <div id="Title-container"></div>
+   <div id="Title">The Gaming Quiz</div>
+    <div id="start-button" class="button-grid">
+<button class="start-button button" onclick="startGame()"><a href="#">Start</a></button>
+    </div>
+</div>   
 
 <!--This is a template for the questions and the answer buttons-->
-<div class="grid">
+<div id="quiz-screen" class="grid hidden">
  <div id="quiz">
   <p id="question"></p>
 
@@ -114,21 +196,33 @@
     <button id="btn3" onclick="checkAnswer(3)" onclick="progressBar()"><span id="choice3"></span></button>
   </div>
 
-  <!--<div class="startscreen">
-    <p id="title"></p>
-   </div>-->
-
+<!--This is the template for the progressbar and text inside the bar-->
 <div id="progress">
-  <div id="bar">
+<div id="bar">
+   </div>
   </div>
-</div>
-</div>
-</div>
+ </div>
 
-<!--<button id="Start-btn"onclick="startGame()">Start</button>-->
+ <!--This is a template for the results page
+ <div id="results" class="result hidden">
+  <p id="answer1">Question</p>
+  <p id="answer2"></p>
+  <p id="answer3"></p>
+  <p id="answer4"></p>
+  <p id="answer5"></p>
+  <p id="answer6"></p>
+  <p id="answer7"></p>
+  <p id="answer8"></p>
+  <p id="answer9"></p>
+  <p id="answer10"></p>
+   </div>-->
+</div>
 
 <!--This is the template for the restart button-->
 <button id="Restart-btn" class="hidden" onclick="restartGame()">Restart</button>
+
+<!--This is the template for the result button-->
+<!--<button id="Result-btn" class="hidden" onclick="resultList()" onclick="showResult()">Results</button>-->
 <script>
 
 // Variable for the score
@@ -140,8 +234,30 @@ var index = 0;
 // Variable for the progressbar
 var width = 5;
 
-// The variable for the restart button
-var restartBtn = document.getElementById("Restart-btn")
+// Variable for the startscreen
+var start = document.getElementById("start-screen");
+
+// Variable for the restart button
+var restartBtn = document.getElementById("Restart-btn");
+
+// Variable for the result button
+// var resultBtn = document.getElementById("Result-btn")
+
+// Variable for the quiz screen
+var quizScreen = document.getElementById("quiz-screen");
+
+// Variable for each question
+// For the result page
+/* var answer1 = document.getElementById("answer1");
+var answer2 = document.getElementById("answer2");
+var answer3 = document.getElementById("answer3");
+var answer4 = document.getElementById("answer4");
+var answer5 = document.getElementById("answer5");
+var answer6 = document.getElementById("answer6");
+var answer7 = document.getElementById("answer7");
+var answer8 = document.getElementById("answer8");
+var answer9 = document.getElementById("answer9");
+var answer10 = document.getElementById("answer10"); */
 
 // This is the stored questions that is stored in an 2d array. The right answer is stored in the question array
 var questions = [
@@ -171,15 +287,21 @@ var choices = [
 ["24/7", "6 - 13 hours", "30 minutes", "What? Do we ever stop gaming?"]
 ];
 
-/*function startGame() {
-var element = document.getElementById("title");
-element.innerText = 
-}*/
+// This is a function that displays the start screen and after the button is clicked the questions displays
+function startGame() {
+// On click the title and start button disappears
+start.classList.add("hidden");
+// After button is clicked the questions displays
+quizScreen.classList.remove("hidden");
+}
 
-
-// This is a function that matches the question to the choice user clicked on.
+// This is a function that matches the question to the choice user clicked on
 function checkAnswer(choice) {
-  
+// This is a varible that collects the answered questions
+  var number = index + 1;
+
+  // This is for the result page
+  //var answer = document.getElementById("answer" + number);
   //console.log(choice)
   //console.log(questions[index][1])
   
@@ -187,17 +309,17 @@ function checkAnswer(choice) {
   if (questions[index][1]==choice) {
    // console.log("Correct answer!")
     
-    // This is for the list with results
-   //resultlist[index] = true;
+    // This is for the result page
+   //answer.classList.add("correct");
    
    score++;
   }
   else {
     // If the user clicked the wrong choice the user gets no points
     
+    // This is for the result page
+    //answer.classList.add("wrong");
     //console.log("Wrong answer!")
-   // This is for the list with results
-  //resultlist[index] = false;
   }
   index++;
   populate();
@@ -262,6 +384,10 @@ function showScores() {
   // This makes the restart button show up
   element.appendChild(restartBtn)
   restartBtn.classList.remove("hidden");
+
+  // For the result button to display at the end of the quiz
+/* element.appendChild(resultBtn)
+resultBtn.classList.remove("hidden"); */
 };
 
 // This is the function for the restart button so the game restarts
@@ -271,6 +397,18 @@ function restartGame() {
  // Makes the button hidden through out the quiz until the end of the quiz
  restartBtn.classList.add("hidden");
 };
+
+// These two function is beginning of the result page
+
+ /*function resultList() {
+  resultBtn.classList.add("hidden");
+};
+
+function showResult() {
+var element = document.getElementById("results");
+result.classList.remove("hidden");
+  resultBtn.classList.add("hidden");
+}; */
 
 // This starts and displays the quiz
 populate();
