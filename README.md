@@ -36,6 +36,8 @@
 
 > Of course at the last minute a problem came. I tried to send my quiz to my boyfriend and of course he couldn't start it. Because he didn't have the code for the actual quiz when I sent only the code for the startscreen. What I need to do now is to add the startscreen into the rest of the code. Have tried on my own but can't make it work.
 
+> With the help from Colin I could see how I could do it in an easy way. I copied the code for the start screen and pasted it into the quiz code. After that I changed some tiny details that didn't work now because some in CSS got doubled. Then I needed to hide the questions and the start screen, do a function that's either displays the start screen and hides the quiz or hides the start screen and displays the quiz. After that it worked! We tried to experiment on the result page but we couldn't finish it because we didn't know how to do the last part. I sat down and tried my own idea how to do it. Came somewhere but it's not finished because I cant figure it out. But turned everything into comments for future use or experiments.
+
 > Links:
 > 
 > https://www.w3schools.com/default.asp
