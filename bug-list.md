@@ -32,4 +32,4 @@ Fix: Via different sources I got the help to make the bar work. I had spelled el
 
 8. Problem: When sending the program to my boyfriend I discovered that it couldn't find the file for the actual quiz if I just send the start screen. Therefore the whole code (startscreen and quiz) needs to be in one single file.
 
-Fix:
+Fix: Pasted the index code med the quiz code and made a function where the startscreen shows up but the questions does not do that because it's "hidden". When the start button are clicked the function adds "hidden" to the startscreen and removes "hidden" from the questions so they shows up instead.
